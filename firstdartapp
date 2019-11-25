@@ -1,0 +1,64 @@
+
+import 'dart:math';
+
+class Person {
+  String name, city, country;
+  int age;
+
+ 
+
+  set setAge(int value) => age = value; /////setter method
+  int get getAge => age; ///// getter method
+  //*************** this a declare for the constructor ********************
+//  Person(String name,int age,double salary,String city, String country)
+//  {
+//    this.name=name;
+//    this.age=age;
+//    this.salary=salary;
+//    this.city=city;
+//    this.country=country;
+//  }
+  //******************** Another declaring for constructor doing the same task**************************
+  Person(this.name, this.age, this.salary, this.city, this.country);
+
+  fullName() {
+    print("Name is :: ${name}");
+  }
+
+  void personWalk() {
+    print("Name is :: ${name}");
+  }
+
+  void personSleep() {
+    print("Name is :: ${name}");
+  }
+
+  int personage() {
+    return age;
+  }
+
+  double personSalary() => salary;
+}
+
+main(List<String> arguments) {
+  var p1 = new Person("Tarek", 20, 7000.0, "Tanta", "EGYPT");
+  print("${p1.name} ${p1.age} ${p1.salary} ${p1.city} ${p1.country}");
+  p1.setAge = 99;
+  print(p1.getAge);
+
+);
+  p1.fullName();
+  print(p1.personage());
+  print(p1.personSalary());
+ List <int> my=[50,60,24,23,25,55]; ///when we want to make an array
+  print(my[0]);
+  for(int h=0; h<6;h++)
+    {
+      print(my[h]);
+    }
+  var collection=['Tarek', 15,20,654.0]; ///here when we want to make an array for different data_types
+  for(int z=0; z<collection.length;z++)
+  {
+    print(collection[z]);
+  }
+}
